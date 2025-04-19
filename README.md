@@ -3,6 +3,27 @@ Developing a LLM User Agent using Llama3.1 to mine EHR and PGhD data of  the pat
 
 YOUTUBE LINK: https://youtu.be/wQ5l5yrvWdM
 
+###### CCDA FILE NOTEBOOK: 
+- This file consists of the code which is written using Llama 3.1 which can extracts the data of the real-time patients and gives a good summary with the Plotly Visualizations on the Patient's Vitals using their CCDA data.
+-  From below you can go head and see the notebook link where you can also view from the /LLM_User_Agent/blob/main/Notebooks/LLAMA_CODE.ipynb.zip.
+-  Note: As this a large file (larger than 25mb), this has been uploaded in the zip format.
+-  **LLAMA_CODE** - https://github.com/karthikkumarcholleti/LLM_User_Agent/blob/main/Notebooks/LLAMA_CODE.ipynb.zip
+
+###### Data Preprocessing notebooks.
+
+- **CCDA Cleaned.ipynb** - This preprocessed code saves all the preprocessed CCDA FHIR files into a new file folder CCDA Cleaned which are convcerted by name.
+-  File with the name **Name_Matching_Logic.ipynb** - https://github.com/karthikkumarcholleti/LLM_User_Agent/blob/main/Notebooks/Name_matching_logic.ipynb
+   Matches the patients names into one common names as there are three different files i.e ADT, CCDA, ORU and each of the file has names of the same patients in different format. This 
+   This logic helps us to create a common name which helps the model to extract all the available information from their folder.
+- File with the name **Preprocessing to csv.ipynb** https://github.com/karthikkumarcholleti/LLM_User_Agent/blob/main/Notebooks/patient_obsv_1_cleaned_v2.ipynb
+-  This is the file which helps to generate a csv file which is preprocessed and helps further used by the other data code to generate the Cleaned FHIR CCDA files.
+-  File with the name **Patient_obsv_cleaned_1_v2.ipynb** https://github.com/karthikkumarcholleti/LLM_User_Agent/blob/main/Notebooks/patient_obsv_1_cleaned_v2.ipynb
+   This csv is used by the CCDA_cleaned.ipynb to store the cleaned CCDA files.
+
+
+
+
+
 
 # LLM‑UA: AI‑Powered Clinical Assistant for EHR & PGHD
 
